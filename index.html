@@ -1,43 +1,54 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bungee+Spice&family=Martian+Mono:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&family=Turret+Road&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"
-      rel="stylesheet"
-    />
-    <title>Agro Sucesso</title>
-  </head>
-  <body>
-    <header>
-    
-      <span class="esquerda">
-      <a href="index.html">
-      <img class="logo" src="img/Agrinho.png" alt="desgraça" width="150px"/>
-      </a>
-      </span>
-      <div class="titulo">Agro Sucesso</div>
-      <span class="direita">
-        <a class="links" style="text-decoration: none;" href="contato.html">Contato</a>
-        <a class="links" style="text-decoration: none;" href="entrar.html">Entrar</a> 
-        <a class="links" style="text-decoration: none;" href="login.html">Cadastrar</a>
-      </span>
-      <div class="tamanhofonte">Acessibilidade
-        <button onclick="toggleDropdown()">▼</button>
-        <ul id="dropdown" style="display: none;">
-        <li><button onclick="aumentarfont()">Aumentar fonte</button></li>
-        <li><button onclick="diminuirfont()">Diminuir fonte</button></li>
+<html lang="pt-BR">
+<div class="pagina">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agro Sucesso</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bungee+Spice&family=Martian+Mono:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&family=Turret+Road&display=swap"
+    rel="stylesheet"/>
+</head>
+<body>
+  
+  <input type="radio" name="font" id="font-padrao" hidden>
+  <input type="radio" name="font" id="font-medio" hidden>
+  <input type="radio" name="font" id="font-grande" hidden>
+  <input type="radio" name="font" id="font-muitoGrande" hidden>
+  <input type="checkbox" id="toggle-contrast" hidden>
+  <input type="checkbox" id="toggle-accessibility" hidden>
+
+  <div class="acessibilidade-wrapper">
+    <label for="toggle-accessibility" class="accessibility-fixed" aria-label="Menu de acessibilidade">Acessibilidade</label>
+
+    <div class="accessibility-menu hidden">
+      <label for="toggle-contrast">Alto Contraste</label>
+      <div class="tamanhof"><a class="tamanhof">Tamanho da fonte:</a>
+      <label for="font-padrao">Padrão</label>
+      <label for="font-medio">Médio</label>
+      <label for="font-grande">Grande</label>
+      <label for="font-muitoGrande">Muito Grande</label></div>
+      
+    </div>
+
+    <header class="header">
+      <div class="logo">
+        <a href="#inicio"><img src="./img/logo.png" alt="Logo Agrinho" /></a>
       </div>
+      <div class="site-title">Agro Sucesso: o agronegócio do Paraná e do Brasil</div>
+      <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">☰</label>
+        <ul class="nav-links">
+          <li><a href="#inicio">Ínicio</a></li>
+          <li><a href="#texto">Textos</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+        </ul>
+      </nav>
     </header>
-    <footer>
+
+    <main>
       <div class="introdução">
         <h1>introdução</h1>
         <h2 style="text-align: center;" tabindex="0">
@@ -54,10 +65,10 @@
             style="text-decoration: none"
             href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/exportacoes-do-agronegocio-ultrapassam-us-153-bilhoes-no-acumulado-de-2024#:~:text=Exportações%20do%20agronegócio%20ultrapassam%20US,Ministério%20da%20Agricultura%20e%20Pecuária"
             >[1]</a></sup>
-        </h2> <img src="img/soja.png" style="height: 500px; margin-right: 10px;"> 
+        </h2> <img src="img/soja.png" style="height: 400px; margin-right: 10px; border-radius: 15px;""> 
       </div>
 
-      <div class="texto2">
+      <div class="texto1">
         <h1> Novas tecnologias e invações</h1>
         <h2 style="text-align: justify" tabindex="0">
           O Brasil vem crescendo e desenvolvendo novas tecnologias para ampliar os rendimentos
@@ -66,23 +77,23 @@
             style="text-decoration: none"
             href="https://nutricaodesafras.com.br/drone-na-agricultura"
             >[2]</a></sup>
-        </h2> <img src="img/drone.png" style="height: 500px; margin-right: 10px;">
+        </h2> <img src="img/drone.png" style="height: 400px; margin-right: 10px; border-radius: 15px;"">
       </div>
 
-      <div class="texto3">
+      <div id="texto" class="texto1">
         <h1>A Cultura da Cevada no Paraná</h1>
         <h2 style="text-align: justify" tabindex="0">
           O Paraná é um dos maiores produtores de cevada do mundo, a cevada é bem presente
           no estado, em 2024 foram plantados 76,5 mil hectares e 360 mil toneladas colhidas, tendo 
-          a Agraria que é a maior maltaria da America Latina e lidera a produção de cevada no país.
+          a <a style="text-decoration: none;" href="https://www.agraria.com.br">Agraria</a> que é a maior maltaria da America Latina e lidera a produção de cevada no país.
           <sup><a
             style="text-decoration: none"
             href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/exportacoes-do-agronegocio-ultrapassam-us-153-bilhoes-no-acumulado-de-2024#:~:text=Exportações%20do%20agronegócio%20ultrapassam%20US,Ministério%20da%20Agricultura%20e%20Pecuária"
             >[1]</a></sup>
-        </h2> <img src="img/cevada.png" style="height: 500px; margin-right: 10px;">
+        </h2> <img src="img/cevada.png" style="height: 400px; margin-right: 10px; border-radius: 15px;">
       </div>
 
-      <div class="texto4">
+      <div class="texto1">
         <h1>O transporte de grãos</h1>
         <h2 style="text-align: justify" tabindex="0">
           O transporte dos grãos é majoriariamente feito por rodovias, mas pode ser feito por
@@ -92,15 +103,66 @@
             style="text-decoration: none"
             href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/exportacoes-do-agronegocio-ultrapassam-us-153-bilhoes-no-acumulado-de-2024#:~:text=Exportações%20do%20agronegócio%20ultrapassam%20US,Ministério%20da%20Agricultura%20e%20Pecuária"
             >[1]</a></sup>
-        </h2> <img class="imagem4" src="img/caminhão.jpg" style="height: 500px; margin-right: 10px;">
+        </h2> <img class="imagem4" src="img/caminhão.jpg" style="height: 400px; margin-right: 10px; border-radius: 15px;"">
       </div>
 
-      <div class="rodape">
-        Site criado por João para o Concurso agrinho 2025.<br>
-        © 2025 Copyright | João Todos os direitos reservados
+      <section id="quiz" class="reveal visible">
+  <h2>Quiz: Você conhece o agronegócio Brasileiro?</h2>
+
+  <!-- Caixa de Controle -->
+  <input type="checkbox" id="quiz-toggle" hidden>
+
+  <form class="quiz-form">
+    <div class="quiz-question">
+      <p>1. Qual foi o valor das exportações do agronegócio brasileiro em 2024?</p>
+      <label><input type="radio" name="q1" > US$ 143 bilhões</label>
+      <label><input type="radio" name="q1"> US$ 156 bilhões</label>
+      <label><input type="radio" name="q1"required> US$ 153 bilhões</label>
+    </div>
+
+    <div class="quiz-question">
+      <p>2. Qual tecnologia é mencionada como destaque na agricultura de precisão no Brasil?</p>
+      <label><input type="radio" name="q2" > Tratores automáticos</label>
+      <label><input type="radio" name="q2"required> Drones avançados</label>
+      <label><input type="radio" name="q2"> Robôs humanoides</label>
+    </div>
+
+    <div class="quiz-question">
+      <p>3. Qual é o principal meio de transporte de grãos no Brasil?</p>
+      <label><input type="radio" name="q3" required> Rodoviário</label>
+      <label><input type="radio" name="q3"> Ferroviário</label>
+      <label><input type="radio" name="q3"> Aquaviário</label>
+    </div>
+
+    <label for="quiz-toggle" class="quiz-submit-btn">Enviar</label>
+  </form>
+
+  <div class="quiz-result">
+    <p>Obrigado por participar! 🚜🌾</p>
+  </div>
+</section>
+
+
+      <section id="contato" class="reveal visible">
+        <h2>Contato</h2>
+        <p>João Costa</p>
+        <p>Email: costa.joao14@escola.pr.govl.br</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Site criado por João para o Concurso agrinho 2025.<br>
+        © 2025 Copyright | João, Todos os direitos reservados</p>
+      <div class="social-links">
+        <a href="https://github.com/jaodufrifai" target="_blank">
+          <img src="./img/github.png" alt="GitHub" class="social-icon"/>
+        </a>
+        <a href="https://www.instagram.com/joao.montanhas/" target="_blank">
+          <img src="./img/instagram.png" alt="Instagram" class="social-icon"/>
+        </a>
       </div>
     </footer>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
-      <script src="script.js"></script>
-  </body>
+  </div>
+</body>
+</div>
 </html>
