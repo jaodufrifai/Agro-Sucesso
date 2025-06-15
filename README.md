@@ -59,7 +59,7 @@ Utiliza media queries para adaptar o layout em telas menores (dispositivos móve
 ## 🌐 Publicação
 
 - Projeto hospedado via **GitHub Pages**
-- Link para acesso direto: **[inserir o link do GitHub Pages aqui]**
+- Link para acesso direto: **[site](https://jaodufrifai.github.io/Agro-Sucesso/)**
 - Repositório contém a **tag oficial do Agrinho** nos tópicos
 
 ---
