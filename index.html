@@ -1,45 +1,54 @@
-
+<!-- Pré-definições gerais do html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
-<div class="pagina">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agro Sucesso</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bungee+Spice&family=Martian+Mono:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&family=Turret+Road&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700"
     rel="stylesheet"/>
 </head>
+
 <body>
-  
-  <input type="radio" name="font" id="font-padrao" hidden>
-  <input type="radio" name="font" id="font-medio" hidden>
-  <input type="radio" name="font" id="font-grande" hidden>
-  <input type="radio" name="font" id="font-muitoGrande" hidden>
+  <!-- Inputs para controlar acessibilidade -->
+  <input type="radio" name="font" id="fontSizeP" hidden>
+  <input type="radio" name="font" id="fontSizeM" hidden>
+  <input type="radio" name="font" id="fontSizeG" hidden>
+  <input type="radio" name="font" id="fontSizeGG" hidden>
   <input type="checkbox" id="toggle-contrast" hidden>
   <input type="checkbox" id="toggle-accessibility" hidden>
 
+  <!-- Interface de acessibilidade e conteúdo -->
   <div class="acessibilidade-wrapper">
-    <label for="toggle-accessibility" class="accessibility-fixed" aria-label="Menu de acessibilidade">Acessibilidade</label>
+    <label for="toggle-accessibility" class="accessibility-fixed" aria-label="Menu de acessibilidade"><img src="/img/acessibilidade.png" style="height: 30px;"></label>
 
+    <!-- Menu de acessibilidade -->
     <div class="accessibility-menu hidden">
       <label for="toggle-contrast">Alto Contraste</label>
-      <div class="tamanhof"><a class="tamanhof">Tamanho da fonte:</a>
-      <label for="font-padrao">Padrão</label>
-      <label for="font-medio">Médio</label>
-      <label for="font-grande">Grande</label>
-      <label for="font-muitoGrande">Muito Grande</label></div>
-      
+
+      <div class="fontSizeText">
+        <a class="fontSizeText">Tamanho da fonte:</a>
+        <label for="fontSizeP">Padrão</label>
+        <label for="fontSizeM">Médio</label>
+        <label for="fontSizeG">Grande</label>
+        <label for="fontSizeGG">Muito Grande</label>
+      </div>
     </div>
 
+    <!-- Cabeçalho -->
     <header class="header">
       <div class="logo">
         <a href="#inicio"><img src="./img/logo.png" alt="Logo Agrinho" /></a>
       </div>
+
       <div class="site-title">Agro Sucesso: o agronegócio do Paraná e do Brasil</div>
+
+      <!-- Nav-bar -->
       <nav class="navbar">
         <input type="checkbox" id="menu-toggle" hidden>
         <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">☰</label>
+
         <ul class="nav-links">
           <li><a href="#inicio">Ínicio</a></li>
           <li><a href="#texto">Textos</a></li>
@@ -48,101 +57,121 @@
       </nav>
     </header>
 
-    <main>
-      <div class="introdução">
+    <!-- Área principal do conteúdo da página --> <div id="inicio" class="intro">
+      <div class="textoIntro">  
         <h1>introdução</h1>
-        <h2 style="text-align: center;" tabindex="0">
-          Nesse site você encontrará informações sobre o agronegócio no Brasil e sua importância para o país
-        </h2>
+        <h2 tabindex="0">
+          Neste site, você vai encontrar informações essenciais sobre o agronegócio no Brasil e no Paraná e o papel fundamental que ele desempenha na economia do país.
+        </h2></div>
+        <img class="tratorImg" src="/img/trator.png">
       </div>
-      <div class="texto1">
-        <h1>A importância do agro</h1>
-        <h2 style="text-align: justify" tabindex="0">
-          Em 2024 as exportações do agronegócio ultrapassaram US$ 153 bilhões.
-          Isso mostra a força do agro negócio no país, e sua importância para a ecônomia nacional,
-          são 48% do total das exportações brasileiras. Os principais setores foram de soja, carne,
-          sucroalcooleiro.<sup><a
-            style="text-decoration: none"
-            href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/exportacoes-do-agronegocio-ultrapassam-us-153-bilhoes-no-acumulado-de-2024#:~:text=Exportações%20do%20agronegócio%20ultrapassam%20US,Ministério%20da%20Agricultura%20e%20Pecuária"
-            >[1]</a></sup>
-        </h2> <img src="img/soja.png" style="height: 400px; margin-right: 10px; border-radius: 15px;""> 
-      </div>
+    <main>
 
-      <div class="texto1">
-        <h1> Novas tecnologias e invações</h1>
+      <div class="line"></div>
+      <!-- Texto sobre a importância do agronegócio no Brasil -->
+      <div class="bloco">
+        <div><h1>A importância do agro</h1>
         <h2 style="text-align: justify" tabindex="0">
-          O Brasil vem crescendo e desenvolvendo novas tecnologias para ampliar os rendimentos
-          com o agronegócio, como na agricultura de precisão onde drones avançados são utilizados
-          para pulverização ou averiguar dados do solo e das plantas precisamente e rapidamente. <sup><a
-            style="text-decoration: none"
-            href="https://nutricaodesafras.com.br/drone-na-agricultura"
-            >[2]</a></sup>
-        </h2> <img src="img/drone.png" style="height: 400px; margin-right: 10px; border-radius: 15px;"">
+          Em 2024, as exportações do agronegócio brasileiro ultrapassaram a marca de US$ 153 bilhões, representando 48,9% do total das 
+          exportações do país no acumulado de janeiro a novembro. Esse desempenho expressivo reforça a força e a relevância do setor para 
+          a economia nacional, consolidando o Brasil como um dos principais atuantes no comércio agrícola global. Os principais 
+          destaques foram o complexo da soja, com US$ 52,19 bilhões exportados, seguido pelo setor de carnes (US$ 23,93 bilhões) e 
+          pelo complexo sucroalcooleiro (US$ 18,27 bilhões), que juntos responderam por mais de 60% das exportações do agro.
+          <sup><a style="text-decoration: none"
+            href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/exportacoes-do-agronegocio-ultrapassam-us-153-bilhoes-no-acumulado-de-2024#:~:text=Exportações%20do%20agronegócio%20ultrapassam%20US,Ministério%20da%20Agricultura%20e%20Pecuária">
+            [1]</a></sup>
+        </h2></div>
+        <img src="img/soja.png" style="height: 400px; margin-right: 10px; border-radius: 15px;">
       </div>
-
-      <div id="texto" class="texto1">
-        <h1>A Cultura da Cevada no Paraná</h1>
+      <div class="line"></div>
+      <!-- Texto sobre inovações tecnológicas no campo -->
+      <div class="bloco">
+        <img src="img/drone.png" style="height: 400px; margin-right: 10px; border-radius: 15px;">
+        <div><h1> Novas tecnologias e inovações</h1>
         <h2 style="text-align: justify" tabindex="0">
-          O Paraná é um dos maiores produtores de cevada do mundo, a cevada é bem presente
-          no estado, em 2024 foram plantados 76,5 mil hectares e 360 mil toneladas colhidas, tendo 
-          a <a style="text-decoration: none;" href="https://www.agraria.com.br">Agraria</a> que é a maior maltaria da America Latina e lidera a produção de cevada no país.
-          <sup><a
-            style="text-decoration: none"
-            href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/exportacoes-do-agronegocio-ultrapassam-us-153-bilhoes-no-acumulado-de-2024#:~:text=Exportações%20do%20agronegócio%20ultrapassam%20US,Ministério%20da%20Agricultura%20e%20Pecuária"
-            >[1]</a></sup>
-        </h2> <img src="img/cevada.png" style="height: 400px; margin-right: 10px; border-radius: 15px;">
+          O Brasil vem se destacando no desenvolvimento e na adoção de tecnologias inovadoras para impulsionar os resultados do 
+          agronegócio. Um dos avanços mais notáveis está na agricultura de precisão, especialmente com o uso de drones avançados. 
+          Esses equipamentos têm revolucionado o campo ao permitir a pulverização localizada e o monitoramento detalhado das lavouras, 
+          coletando dados sobre o solo e as plantas com rapidez e precisão.
+          <sup><a style="text-decoration: none"
+            href="https://nutricaodesafras.com.br/drone-na-agricultura">
+            [2]</a></sup>
+        </h2></div>
       </div>
-
-      <div class="texto1">
-        <h1>O transporte de grãos</h1>
+      <div class="line"></div>
+      <!-- Texto sobre a produção de cevada no Paraná -->
+      <div id="texto" class="bloco">
+        <div><h1>A Cultura da Cevada no Paraná</h1>
         <h2 style="text-align: justify" tabindex="0">
-          O transporte dos grãos é majoriariamente feito por rodovias, mas pode ser feito por
-          água, trilhos ou aéreo, o modo rodoviário é responsável por 61,1% do transporte de grãos, 
-          seguido do ferroviário, 20,7%; o aquaviário, 13,6%; o dutoviário, 4,2% e o aeroviário possui 
-          apenas 0,4%, segundo os dados da Confederação Nacional do Transporte.<sup><a
-            style="text-decoration: none"
-            href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/exportacoes-do-agronegocio-ultrapassam-us-153-bilhoes-no-acumulado-de-2024#:~:text=Exportações%20do%20agronegócio%20ultrapassam%20US,Ministério%20da%20Agricultura%20e%20Pecuária"
-            >[1]</a></sup>
-        </h2> <img class="imagem4" src="img/caminhão.jpg" style="height: 400px; margin-right: 10px; border-radius: 15px;"">
+          O Paraná se consolida como um dos maiores produtores de cevada do mundo, sendo referência nacional tanto em área plantada quanto 
+          em produtividade. Em 2024, o estado cultivou cerca de 76,5 mil hectares, com uma colheita estimada em 360 mil toneladas, 
+          superando os números do ano anterior e demonstrando a força da cultura no cenário agrícola paranaense2. A região dos Campos 
+          Gerais, especialmente os arredores de Guarapuava e Ponta Grossa, concentra grande parte dessa produção, impulsionada por 
+          investimentos em tecnologia e infraestrutura.
+          <sup><a style="text-decoration: none"
+            href="https://www.agricultura.pr.gov.br/sites/default/arquivos_restritos/files/documento/2024-10/boletim_semanal_42_deral.pdf">
+            [1]</a></sup>
+        </h2></div>
+        <img src="img/cevada.png" style="height: 400px; margin-right: 10px; border-radius: 15px;">
       </div>
-
+      <div class="line"></div>
+      <!-- Texto sobre o transporte de grãos no Brasil -->
+      <div class="bloco">
+        <img class="imagem4" src="img/caminhão.jpg" style="height: 400px; margin-right: 10px; border-radius: 15px;">
+        <div><h1>O transporte de grãos</h1>
+        <h2 style="text-align: justify" tabindex="0">
+          O transporte de grãos no Brasil é um dos pilares da logística agroindustrial, e atualmente é realizado de diferentes modos: 
+          rodoviário, ferroviário, aquaviário, dutoviário e aeroviário. No entanto, o modo rodoviário ainda predomina, sendo responsável 
+          por 61,1% do escoamento da produção, de acordo com dados da CNT (Confederação Nacional do Transporte).Em seguida, o 
+          transporte ferroviário representa 20,7%, sendo uma alternativa importante para longas distâncias e grandes volumes, especialmente 
+          nas regiões Centro-Oeste e Sudeste. O modal aquaviário, que inclui hidrovias e transporte marítimo, responde por 13,6%, com 
+          destaque para o escoamento de grãos via portos do Norte e Nordeste.Já o transporte dutoviário, embora mais comum para 
+          líquidos e gases, participa com 4,2%, enquanto o modal aeroviário, utilizado em situações muito específicas e de alto valor 
+          agregado, representa apenas 0,4% da movimentação.
+          <sup><a style="text-decoration: none"
+            href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/exportacoes-do-agronegocio-ultrapassam-us-153-bilhoes-no-acumulado-de-2024#:~:text=Exportações%20do%20agronegócio%20ultrapassam%20US,Ministério%20da%20Agricultura%20e%20Pecuária">
+            [1]</a></sup>
+        </h2></div>
+      </div>
+      <div class="line"></div>
+      <!-- Seção interativa com quiz -->
       <section id="quiz" class="reveal visible">
-  <h2>Quiz: Você conhece o agronegócio Brasileiro?</h2>
+        <h2>Quiz: Você conhece o agronegócio Brasileiro?</h2>
+        <input type="checkbox" id="quiz-toggle" hidden>
 
-  <!-- Caixa de Controle -->
-  <input type="checkbox" id="quiz-toggle" hidden>
+        <!-- Formulário com 3 perguntas e botão de envio -->
+        <form class="quiz-form">
+          <div class="quiz-question">
+            <p>1. Qual foi o valor das exportações do agronegócio brasileiro em 2024?</p>
+            <label><input type="radio" name="q1"> US$ 143 bilhões</label>
+            <label><input type="radio" name="q1"> US$ 156 bilhões</label>
+            <label><input type="radio" name="q1" required> US$ 153 bilhões</label>
+          </div>
 
-  <form class="quiz-form">
-    <div class="quiz-question">
-      <p>1. Qual foi o valor das exportações do agronegócio brasileiro em 2024?</p>
-      <label><input type="radio" name="q1" > US$ 143 bilhões</label>
-      <label><input type="radio" name="q1"> US$ 156 bilhões</label>
-      <label><input type="radio" name="q1"required> US$ 153 bilhões</label>
-    </div>
+          <div class="quiz-question">
+            <p>2. Qual tecnologia é mencionada como destaque na agricultura de precisão no Brasil?</p>
+            <label><input type="radio" name="q2"> Tratores automáticos</label>
+            <label><input type="radio" name="q2" required> Drones avançados</label>
+            <label><input type="radio" name="q2"> Robôs humanoides</label>
+          </div>
 
-    <div class="quiz-question">
-      <p>2. Qual tecnologia é mencionada como destaque na agricultura de precisão no Brasil?</p>
-      <label><input type="radio" name="q2" > Tratores automáticos</label>
-      <label><input type="radio" name="q2"required> Drones avançados</label>
-      <label><input type="radio" name="q2"> Robôs humanoides</label>
-    </div>
+          <div class="quiz-question">
+            <p>3. Qual é o principal meio de transporte de grãos no Brasil?</p>
+            <label><input type="radio" name="q3" required> Rodoviário</label>
+            <label><input type="radio" name="q3"> Ferroviário</label>
+            <label><input type="radio" name="q3"> Aquaviário</label>
+          </div>
 
-    <div class="quiz-question">
-      <p>3. Qual é o principal meio de transporte de grãos no Brasil?</p>
-      <label><input type="radio" name="q3" required> Rodoviário</label>
-      <label><input type="radio" name="q3"> Ferroviário</label>
-      <label><input type="radio" name="q3"> Aquaviário</label>
-    </div>
+          <label for="quiz-toggle" class="quiz-submit-btn">Enviar</label>
+        </form>
 
-    <label for="quiz-toggle" class="quiz-submit-btn">Enviar</label>
-  </form>
-
-  <div class="quiz-result">
-    <p>Obrigado por participar! 🚜🌾</p>
-  </div>
-</section>
-
-
+        <!-- Resultado exibido após envio -->
+        <div class="quiz-result">
+          <p>Obrigado!</p>
+        </div>
+      </section>
+      <div class="line"></div>
+      <!-- Informações de contato -->
       <section id="contato" class="reveal visible">
         <h2>Contato</h2>
         <p>João Costa</p>
@@ -150,13 +179,18 @@
       </section>
     </main>
 
+    <!-- Rodapé com links para redes socias -->
     <footer>
-      <p>Site criado por João para o Concurso agrinho 2025.<br>
-        © 2025 Copyright | João, Todos os direitos reservados</p>
+      <p>
+        Site criado por João para o Concurso Agrinho 2025.<br>
+        © 2025 Copyright | João, Todos os direitos reservados
+      </p>
+
       <div class="social-links">
         <a href="https://github.com/jaodufrifai" target="_blank">
           <img src="./img/github.png" alt="GitHub" class="social-icon"/>
         </a>
+
         <a href="https://www.instagram.com/joao.montanhas/" target="_blank">
           <img src="./img/instagram.png" alt="Instagram" class="social-icon"/>
         </a>
@@ -164,5 +198,4 @@
     </footer>
   </div>
 </body>
-</div>
 </html>
