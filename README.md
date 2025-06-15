@@ -1,5 +1,5 @@
 
-# Agro Sucesso 🌾🇧🇷
+# Agro Sucesso 🌾
 
 **Agro Sucesso** é um site desenvolvido para o Concurso Agrinho 2025 com o tema **"Festejando a conexão campo-cidade"**. O projeto apresenta, de forma interativa e acessível, informações sobre o agronegócio brasileiro, destacando sua importância para a economia e as inovações tecnológicas no setor.
 
