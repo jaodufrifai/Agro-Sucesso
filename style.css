@@ -482,10 +482,11 @@ footer {
   }
 
   .textoIntro {
-    font-size: 0.5rem;
-  }
-
-  .tratorImg {
-    
+    width: 100%; /* ou um valor mais generoso como 90% */
+    max-width: none;
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0 1rem; /* ajuste se estiver muito apertado */
+    box-sizing: border-box;
   }
 }
