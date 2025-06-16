@@ -60,7 +60,7 @@ Utiliza media queries para adaptar o layout em telas menores (dispositivos móve
 
 - Projeto hospedado via **GitHub Pages**
 - Link para acesso direto: **[site](https://jaodufrifai.github.io/Agro-Sucesso/)**
-- Repositório contém a **tag oficial do Agrinho** nos tópicos
+- Repositório contém #agrinho, #arinho2025 nos tópicos
 
 ---
 
@@ -85,7 +85,7 @@ João Costa
 
 ## 🖼️ Créditos Visuais
 
-As imagens utilizadas são de domínio público, capturas de tela feitas por mim, com edições em ferramentas simples (Paint e Canva) ou geradas apartir de um prompt em uma IA(Inteligência Artificial).
+As imagens utilizadas são de domínio público, capturas de tela feitas por mim, com edições em ferramentas simples (Paint e Canva) ou geradas apartir de prompts feitos por mim na IA copilot.
 
 ---
 

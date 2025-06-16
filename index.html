@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agro Sucesso</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700"
-    rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700" rel="stylesheet"/>
 </head>
 
 <body>
@@ -16,16 +15,16 @@
   <input type="radio" name="font" id="fontSizeM" hidden>
   <input type="radio" name="font" id="fontSizeG" hidden>
   <input type="radio" name="font" id="fontSizeGG" hidden>
-  <input type="checkbox" id="toggle-contrast" hidden>
-  <input type="checkbox" id="toggle-accessibility" hidden>
+  <input type="checkbox" id="ativarContraste" hidden>
+  <input type="checkbox" id="ativarAcessibilidade" hidden>
 
   <!-- Interface de acessibilidade e conteúdo -->
-  <div class="acessibilidade-wrapper">
-    <label for="toggle-accessibility" class="accessibility-fixed" aria-label="Menu de acessibilidade"><img src="./img/acessibilidade.png" style="height: 30px;"></label>
+  <div class="acessibilidadeWrapper">
+    <label for="ativarAcessibilidade" class="acessibilidadeFixada" aria-label="Menu de acessibilidade"><img src="./img/acessibilidade.png" style="height: 30px;"></label>
 
     <!-- Menu de acessibilidade -->
-    <div class="accessibility-menu hidden">
-      <label for="toggle-contrast">Alto Contraste</label>
+    <div class="menuAcessibilidade hidden">
+      <label for="ativarContraste">Alto Contraste</label>
 
       <div class="fontSizeText">
         <a class="fontSizeText">Tamanho da fonte:</a>
@@ -46,10 +45,10 @@
 
       <!-- Nav-bar -->
       <nav class="navbar">
-        <input type="checkbox" id="menu-toggle" hidden>
-        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">☰</label>
+        <input type="checkbox" id="ativarMenu" hidden>
+        <label for="ativarMenu" class="hamburger" aria-label="Abrir menu">☰</label>
 
-        <ul class="nav-links">
+        <ul class="navLinks">
           <li><a href="#inicio">Ínicio</a></li>
           <li><a href="#texto">Textos</a></li>
           <li><a href="#quiz">Quiz</a></li>
@@ -65,12 +64,12 @@
         </h2></div>
         <img class="tratorImg" src="./img/trator.png">
       </div>
-    <main>
 
-      <div class="line"></div>
+    <main>
+      <div class="linha"></div>
       <!-- Texto sobre a importância do agronegócio no Brasil -->
       <div class="bloco">
-        <div><h1>A importância do agro</h1>
+        <div><h1>A Importância do Agro</h1>
         <h2 style="text-align: justify" tabindex="0">
           Em 2024, as exportações do agronegócio brasileiro ultrapassaram a marca de US$ 153 bilhões, representando 48,9% do total das 
           exportações do país no acumulado de janeiro a novembro. Esse desempenho expressivo reforça a força e a relevância do setor para 
@@ -81,13 +80,14 @@
             href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/exportacoes-do-agronegocio-ultrapassam-us-153-bilhoes-no-acumulado-de-2024#:~:text=Exportações%20do%20agronegócio%20ultrapassam%20US,Ministério%20da%20Agricultura%20e%20Pecuária">
             [1]</a></sup>
         </h2></div>
+
         <img src="img/soja.png" style="height: 400px; margin-right: 10px; border-radius: 15px;">
       </div>
-      <div class="line"></div>
+      <div class="linha"></div>
       <!-- Texto sobre inovações tecnológicas no campo -->
       <div class="bloco">
         <img src="img/drone.png" style="height: 400px; margin-right: 10px; border-radius: 15px;">
-        <div><h1> Novas tecnologias e inovações</h1>
+        <div><h1> Novas Tecnologias e Inovações</h1>
         <h2 style="text-align: justify" tabindex="0">
           O Brasil vem se destacando no desenvolvimento e na adoção de tecnologias inovadoras para impulsionar os resultados do 
           agronegócio. Um dos avanços mais notáveis está na agricultura de precisão, especialmente com o uso de drones avançados. 
@@ -98,7 +98,7 @@
             [2]</a></sup>
         </h2></div>
       </div>
-      <div class="line"></div>
+      <div class="linha"></div>
       <!-- Texto sobre a produção de cevada no Paraná -->
       <div id="texto" class="bloco">
         <div><h1>A Cultura da Cevada no Paraná</h1>
@@ -114,11 +114,11 @@
         </h2></div>
         <img src="img/cevada.png" style="height: 400px; margin-right: 10px; border-radius: 15px;">
       </div>
-      <div class="line"></div>
+      <div class="linha"></div>
       <!-- Texto sobre o transporte de grãos no Brasil -->
       <div class="bloco">
         <img class="imagem4" src="img/caminhão.jpg" style="height: 400px; margin-right: 10px; border-radius: 15px;">
-        <div><h1>O transporte de grãos</h1>
+        <div><h1>O Transporte de Grãos</h1>
         <h2 style="text-align: justify" tabindex="0">
           O transporte de grãos no Brasil é um dos pilares da logística agroindustrial, e atualmente é realizado de diferentes modos: 
           rodoviário, ferroviário, aquaviário, dutoviário e aeroviário. No entanto, o modo rodoviário ainda predomina, sendo responsável 
@@ -131,51 +131,52 @@
           <sup><a style="text-decoration: none"
             href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/exportacoes-do-agronegocio-ultrapassam-us-153-bilhoes-no-acumulado-de-2024#:~:text=Exportações%20do%20agronegócio%20ultrapassam%20US,Ministério%20da%20Agricultura%20e%20Pecuária">
             [1]</a></sup>
-        </h2></div>
+        </h2>
       </div>
-      <div class="line"></div>
+      </div>
+      <div class="linha"></div><br>
       <!-- Seção interativa com quiz -->
       <section id="quiz" class="reveal visible">
         <h2>Quiz: Você conhece o agronegócio Brasileiro?</h2>
-        <input type="checkbox" id="quiz-toggle" hidden>
+        <input type="checkbox" id="ativarQuiz" hidden>
 
         <!-- Formulário com 3 perguntas e botão de envio -->
-        <form class="quiz-form">
-          <div class="quiz-question">
+        <form class="quizFormulario">
+          <div class="quizQuestão">
             <p>1. Qual foi o valor das exportações do agronegócio brasileiro em 2024?</p>
             <label><input type="radio" name="q1"> US$ 143 bilhões</label>
             <label><input type="radio" name="q1"> US$ 156 bilhões</label>
             <label><input type="radio" name="q1" required> US$ 153 bilhões</label>
           </div>
 
-          <div class="quiz-question">
+          <div class="quizQuestão">
             <p>2. Qual tecnologia é mencionada como destaque na agricultura de precisão no Brasil?</p>
             <label><input type="radio" name="q2"> Tratores automáticos</label>
             <label><input type="radio" name="q2" required> Drones avançados</label>
             <label><input type="radio" name="q2"> Robôs humanoides</label>
           </div>
 
-          <div class="quiz-question">
+          <div class="quizQuestão">
             <p>3. Qual é o principal meio de transporte de grãos no Brasil?</p>
             <label><input type="radio" name="q3" required> Rodoviário</label>
             <label><input type="radio" name="q3"> Ferroviário</label>
             <label><input type="radio" name="q3"> Aquaviário</label>
           </div>
 
-          <label for="quiz-toggle" class="quiz-submit-btn">Enviar</label>
+          <label for="ativarQuiz" class="botaoEnviarQuiz">Enviar</label>
         </form>
 
         <!-- Resultado exibido após envio -->
-        <div class="quiz-result">
+        <div class="resultadoQuiz">
           <p>Obrigado!</p>
         </div>
       </section>
-      <div class="line"></div>
+      <div class="linha"></div><br>
       <!-- Informações de contato -->
       <section id="contato" class="reveal visible">
         <h2>Contato</h2>
         <p>João Costa</p>
-        <p>Email: costa.joao14@escola.pr.govl.br</p>
+        <p>Email: costa.joao14@escola.pr.gov.br</p>
       </section>
     </main>
 
@@ -183,16 +184,15 @@
     <footer>
       <p>
         Site criado por João para o Concurso Agrinho 2025.<br>
-        © 2025 Copyright | João, Todos os direitos reservados
+        © 2025 Copyright João | Todos os direitos reservados
       </p>
 
-      <div class="social-links">
+      <div class="linksSociais">
         <a href="https://github.com/jaodufrifai" target="_blank">
-          <img src="./img/github.png" alt="GitHub" class="social-icon"/>
+          <img src="./img/github.png" alt="GitHub" class="iconeSocial"/>
         </a>
-
         <a href="https://www.instagram.com/joao.montanhas/" target="_blank">
-          <img src="./img/instagram.png" alt="Instagram" class="social-icon"/>
+          <img src="./img/instagram.png" alt="Instagram" class="iconeSocial"/>
         </a>
       </div>
     </footer>
