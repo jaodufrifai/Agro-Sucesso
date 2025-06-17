@@ -16,6 +16,7 @@ body {
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
   overflow-x: hidden;
+  margin: 0;
 }
 
 /*  ACESSIBILIDADE  */
@@ -472,8 +473,8 @@ footer {
     display: block;
   }
 
-  .main {
-    width: 20px;
+  .acessibilidadeWrapper {
+    width: 145vw;
   }
 
   .bloco img {
@@ -481,12 +482,19 @@ footer {
     height: 250px;
   }
 
+  .intro {
+    width: 145vw;
+  }
+
   .textoIntro {
-    width: 100%; /* ou um valor mais generoso como 90% */
+    width: 100%;
     max-width: none;
     white-space: normal;
-    word-wrap: break-word;
-    padding: 0 1rem; /* ajuste se estiver muito apertado */
+    padding: 0 1rem;
     box-sizing: border-box;
+  }
+
+  .textoIntro h2 {
+    font-size: 1.5rem;
   }
 }
