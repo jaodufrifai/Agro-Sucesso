@@ -10,6 +10,8 @@ html {
 }
 
 body {
+  width: 100%;
+  max-width: 100vw;
   font-family: Agdasima, sans-serif;
   background-color: #f8f4ec;
   color: #333;
@@ -178,6 +180,7 @@ label {
   justify-content: space-between;
   padding: 10px 20px;
   z-index: 3;
+  box-shadow: 0 5px 15px black;
 }
 
 /* Logo com efeito de hover */
@@ -478,7 +481,7 @@ footer {
   }
 
   .bloco img {
-    width: 250px;
+    width: 350px;
     height: 250px;
   }
 
